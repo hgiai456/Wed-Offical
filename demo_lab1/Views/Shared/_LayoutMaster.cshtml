@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/mycss/mystyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div-top">
+        <ul class="fm-menu">
+            <li><a href="Product" class="fm-link-menu-tenshop" id="fm-tenshop">Nha hang Nhat Ban</a></li>
+            <li><a href="Product" class="fm-link-menu">Product</a></li>
+            <li><a href="Contact" class="fm-link-menu">Lien He</a></li>
+            <li><a href="About" class="fm-link-menu">Thong Tin</a></li>
+
+        </ul>
+    </div>
+    <div id="div-left">
+        <marquee direction="down" heigh="400px">
+            Tobboki
+            <img src="~/Content/Image/tobboki.jpg" class="fm-img-left"/> 
+        </marquee>
+    </div>
+    <div id="div-content">
+        @RenderBody()
+    </div>
+    <div id="div-footer">Footer</div>
+</body>
+</html>
